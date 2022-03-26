@@ -7,7 +7,6 @@
 import { defineConfig, loadEnv } from "vite";
 import vue from "@vitejs/plugin-vue";
 import legacy from "@vitejs/plugin-legacy";
-// import styleImport from "vite-plugin-style-import";
 import strip from "@rollup/plugin-strip";
 import eslintPlugin from "vite-plugin-eslint";
 import { visualizer } from "rollup-plugin-visualizer";
@@ -37,15 +36,7 @@ export default defineConfig(({ mode }) => {
       dirs: ["src/components/"],
       resolvers: [VantResolver()],
     }),
-    // styleImport({
-    //   libs: [
-    //     {
-    //       libraryName: "vant",
-    //       esModule: true,
-    //       resolveStyle: (name) => `vant/es/${name}/style/index`,
-    //     },
-    //   ],
-    // }),
+
     eslintPlugin({
       cache: false,
     }),
