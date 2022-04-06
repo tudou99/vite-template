@@ -28,87 +28,23 @@
   <demo />
 </template>
 
-<script lang="ts">
-// import demo from "@/components/demo/index.vue";
-// import a from "@/util";
-export default defineComponent({
-  name: "ComTest",
-  // components: { demo },
-  setup() {
-    const active = ref(0);
-    const time = ref(30 * 60 * 60 * 1000);
-    // console.log(a);
-    const activeNames = ref(["1"]);
-    const ab = ref(123);
-    const list = ref([1, 2, 3]);
-    const value1 = ref(0);
-    const value2 = ref("a");
-    const option1 = [
-      { text: "全部商品", value: 0 },
-      { text: "新款商品", value: 1 },
-      { text: "活动商品", value: 2 },
-    ];
-    const option2 = [
-      { text: "默认排序", value: "a" },
-      { text: "好评排序", value: "b" },
-      { text: "销量排序", value: "c" },
-    ];
-    function showPop() {
-      // console.log(12);
-    }
-    // setInterval(() => {
-    //   list.value.push(+new Date());
-    // }, 1000);
-    return {
-      showPop,
-      active,
-      time,
-      activeNames,
-      ab,
-      list,
-      value1,
-      value2,
-      option1,
-      option2,
-    };
-  },
-});
-</script>
-
-<style lang="scss" scoped>
-.index {
-  background: url("../../assets/img/security/bg_security.png") no-repeat 0 44px;
-  background-size: 100%;
-  .cell_wrap {
-    margin-top: 125px;
-    padding-top: 30px;
-    width: 100%;
-    height: calc(100vh - 199px); // 199px:44px+30px+125px
-    background-color: #ffffff;
-    box-shadow: 0px -2px 26px 0px rgba(175, 177, 187, 0.16);
-    border-radius: 40px 0px 0px 0px;
-    .cell_img {
-      margin-right: 10px;
-      width: 36px;
-      height: 36px;
-    }
-    .cell_text {
-      width: 60%;
-      h3 {
-        font-size: 13px;
-        line-height: 19px;
-        color: #010101;
-        margin: 0;
-      }
-      p {
-        margin-top: 3px;
-        font-size: 10px;
-        color: #b3b3b3;
-      }
-    }
-  }
-  .head_right {
-    color: #dfb55a;
-  }
+<script setup lang="ts">
+const active = ref(0);
+const time = ref(30 * 60 * 60 * 1000);
+const list = ref([1, 2, 3]);
+const value1 = ref(0);
+const value2 = ref("a");
+const option1 = [
+  { text: "全部商品", value: 0 },
+  { text: "新款商品", value: 1 },
+  { text: "活动商品", value: 2 },
+];
+const option2 = [
+  { text: "默认排序", value: "a" },
+  { text: "好评排序", value: "b" },
+  { text: "销量排序", value: "c" },
+];
+function showPop() {
+  // console.log(12);
 }
-</style>
+</script>

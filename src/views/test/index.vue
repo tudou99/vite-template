@@ -23,46 +23,19 @@
   <demo />
 </template>
 
-<script lang="ts">
-// import demo from "@/components/demo/index.vue";
-import { defineComponent, ref } from "vue";
-// import a from "@/util";
-export default defineComponent({
-  name: "ComTest",
-  // components: { demo },
-  setup() {
-    const active = ref(0);
-    const time = ref(30 * 60 * 60 * 1000);
-    // console.log(a);
-    const activeNames = ref(["1"]);
-    const ab = ref(123);
-    const list = ref([1, 2, 3]);
-    const value1 = ref(0);
-    const value2 = ref("a");
-    const option1 = [
-      { text: "全部商品", value: 0 },
-      { text: "新款商品", value: 1 },
-      { text: "活动商品", value: 2 },
-    ];
-    const option2 = [
-      { text: "默认排序", value: "a" },
-      { text: "好评排序", value: "b" },
-      { text: "销量排序", value: "c" },
-    ];
-    // setInterval(() => {
-    //   list.value.push(+new Date());
-    // }, 1000);
-    return {
-      active,
-      time,
-      activeNames,
-      ab,
-      list,
-      value1,
-      value2,
-      option1,
-      option2,
-    };
-  },
-});
+<script lang="ts" setup>
+const active = ref(0);
+const activeNames = ref(["1"]);
+const value1 = ref(0);
+const value2 = ref("a");
+const option1 = [
+  { text: "全部商品", value: 0 },
+  { text: "新款商品", value: 1 },
+  { text: "活动商品", value: 2 },
+];
+const option2 = [
+  { text: "默认排序", value: "a" },
+  { text: "好评排序", value: "b" },
+  { text: "销量排序", value: "c" },
+];
 </script>

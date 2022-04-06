@@ -5,7 +5,6 @@
 declare module 'vue' {
   export interface GlobalComponents {
     Demo: typeof import('./components/demo/index.vue')['default']
-    VanButton: typeof import('vant/es')['Button']
   }
 }
 

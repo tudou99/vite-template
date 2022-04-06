@@ -2,12 +2,11 @@
   <van-button type="primary" @click="totest">主要按钮</van-button>
   <van-button type="success" @click="tohome">成功按钮</van-button>
   <van-button type="success" @click="tothree">three</van-button>
-  <!-- <div class="ased">12345</div> -->
   <router-view />
-  <!-- <ComTest /> -->
 </template>
 
 <script setup lang="ts">
+console.log(1234);
 const router = useRouter();
 function tohome() {
   router.push("/home");

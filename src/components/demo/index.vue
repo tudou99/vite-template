@@ -17,5 +17,3 @@
 const show = ref(true);
 const value = ref("");
 </script>
-
-<style lang="scss" scoped></style>
