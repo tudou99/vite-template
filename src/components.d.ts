@@ -5,19 +5,6 @@
 declare module 'vue' {
   export interface GlobalComponents {
     Demo: typeof import('./components/demo/index.vue')['default']
-    VanButton: typeof import('vant/es')['Button']
-    VanCell: typeof import('vant/es')['Cell']
-    VanCellGroup: typeof import('vant/es')['CellGroup']
-    VanCollapse: typeof import('vant/es')['Collapse']
-    VanCollapseItem: typeof import('vant/es')['CollapseItem']
-    VanCountDown: typeof import('vant/es')['CountDown']
-    VanDropdownItem: typeof import('vant/es')['DropdownItem']
-    VanDropdownMenu: typeof import('vant/es')['DropdownMenu']
-    VanNoticeBar: typeof import('vant/es')['NoticeBar']
-    VanPopup: typeof import('vant/es')['Popup']
-    VanSearch: typeof import('vant/es')['Search']
-    VanTab: typeof import('vant/es')['Tab']
-    VanTabs: typeof import('vant/es')['Tabs']
   }
 }
 
