@@ -57,7 +57,7 @@
   },
   "lint-staged": {
     "*.{ts,js,vue}": [
-      "eslint --ext *.{ts,js,vue} --rule 'no-console: error'"
+      "eslint --fix --rule 'no-console: error'"
     ]
   },
   "vite": {
