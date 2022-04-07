@@ -16,7 +16,7 @@ function totest() {
 function tothree() {
   router.push("/three");
 }
-console.log(12345);
+console.log(123456);
 </script>
 
 <style lang="scss">
