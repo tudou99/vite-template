@@ -6,7 +6,6 @@
 </template>
 
 <script setup lang="ts">
-console.log(1234);
 const router = useRouter();
 function tohome() {
   router.push("/home");
